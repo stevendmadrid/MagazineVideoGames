@@ -2,6 +2,7 @@ body{
     background-color: #f4f4f4;
     margin-left: 5%;
     margin-right: 5%;
+    font-family: "Lato", sans-serif;
 }
 header{
     display: flex;
@@ -25,6 +26,7 @@ h1,h2,h3,h4,h5{
     width: 100%;
     gap: 30px;
     margin: 10px;
+    margin-bottom: 50px;
 }
 .tercio{
     width:75%
@@ -36,13 +38,15 @@ h1,h2,h3,h4,h5{
     display: flex;
     gap: 10px;
 }
+
 .caja{        
-    background-color: #fff;
-    overflow: hidden;
+    background-color: #fff;   
+    overflow: hidden; 
 }
 .caja img{
     width: 100%;
     height: 100px;
+    object-fit: cover;
 }
 .contentcaja{
     display: flex;
@@ -56,8 +60,7 @@ h1,h2,h3,h4,h5{
 .contentcaja p{
     color: #666;
     margin-top: 0px;
-    margin-bottom: 0px;
-    font-family: "Roboto", sans-serif;
+    margin-bottom: 0px;    
     font-weight: 300;
     font-size: 0.8em;
 }
@@ -80,4 +83,41 @@ h1,h2,h3,h4,h5{
     border-bottom: 1px solid #ddd;
     margin: auto;
     margin-left: 10px;
+}
+.corto{
+    display: flex;
+    width: 60%;
+}
+.mitad{
+    width: 50%;
+}
+blockquote{
+    font-family: "Frank Ruhl Libre", serif;
+    color: #2c2d4b;
+    font-size: 2em;
+}
+.shortreview{
+    padding: 50px 100px 0 0;
+    font-size: 0.8em;
+    color: #666;
+}
+.leermas {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    font-family: "Frank Ruhl Libre", serif;
+    color: #2c2d4b;
+    font-weight: 600;
+    margin-bottom: 20px;
+ }
+.leermas:before {
+    content: "";
+    flex: 1 1;
+    border-bottom: 1px solid #ddd;
+    max-width: 50px;
+    margin: auto;
+    margin-right: 10px;
+}
+.spacemin{
+    margin-top: 50px;
 }
