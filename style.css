@@ -164,3 +164,149 @@ blockquote{
 .spacemin{
     margin-top: 50px;
 }
+.horbanner{
+    width: 100%;
+}
+
+/* latest-news-section */
+.latest-news-section {
+    background: #003035;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    margin: 10px;
+    margin-bottom: 50px;
+}
+
+.latest-news-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+.latest-news-section .slider-wrapper {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.latest-news-section .latest-news-slider {
+    max-width: 50%;
+    width: 50%;
+    position: relative;
+    z-index: 10;
+}
+
+.latest-news-section .latest-news-slide {
+    padding: 60px 60px 120px 60px;
+    background: #2c2d4b;
+}
+
+.latest-news-section .latest-news-slide .inner-wrapper {
+    
+}
+
+.latest-news-section .latest-news-slide span {
+    display: block;
+    margin-bottom: 30px;
+    color: #abade4
+}
+
+.latest-news-section .latest-news-slide h2 {
+    font-size: 32px;
+    line-height: 38px;
+    margin-bottom: 30px;
+    color: #FFF;
+}
+
+.latest-news-section .latest-news-slide a {
+    display: inline-block;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 1px solid #EEE;
+    color: #EEE;
+}
+
+.latest-news-section .latest-news-slide a:hover {
+    border-bottom: 1px solid transparent;
+}
+
+.latest-news-section .slick-arrow {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #000;
+    cursor: pointer;
+    background: none;
+    color: transparent;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 50px;
+    left: 60px;
+    z-index: 10;
+}
+
+.latest-news-section .slick-arrow.slick-prev {
+    left: 60px;
+    /*  INSERT THE ARROW ICON AS BACKGROUND IMAGE HERE  */
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.latest-news-section .slick-arrow.slick-next {
+    left: 110px;
+    /*  INSERT THE ARROW ICON AS BACKGROUND IMAGE HERE  */
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.slider-wrapper {
+    position: relative;
+}
+
+.latest-news-slider-2-wrapper {
+    width: 100%;
+    max-width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #FFF;
+}
+
+.latest-news-slider-2 {
+    height: 100%;
+    width: 100%;
+}
+
+.latest-news-slider-2-slide {
+    width: 100%;
+}
+
+.latest-news-slider-2-slide-img {
+    height: 100%;
+    width: 100%;
+}
+
+.latest-news-slider-2-slide img {
+    display: block;
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    transform: translateX(-100px);
+    opacity: 0;
+    transition: all 1s;
+}
+
+.latest-news-slider-2-slide.slick-active img {
+    transform: translateX(0px);
+    opacity: 1;
+    transition-delay: 0.5s;
+}
+
+.latest-news-section .slick-arrow {
+    border: 2px solid #FFF;
+    margin-left: -105px;
+    top: 50px;
+}
