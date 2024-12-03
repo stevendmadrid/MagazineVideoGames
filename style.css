@@ -1109,9 +1109,7 @@ footer .columna{
 
 @media only screen and (max-width: 600px) {
 
-    body{     
-        overflow-x: hidden;
-    }
+    html, body {overflow-x: hidden !important;width: 100vw !important;}
     header nav{
         z-index: 1000;
     }
