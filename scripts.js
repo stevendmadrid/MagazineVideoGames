@@ -159,5 +159,9 @@ document.querySelectorAll('.newsletter-form').forEach(form => {
 
 })
 
-/* MENU */
+/* POST */
 
+function goToPost() {
+    // Here you can write all the code that should happen before the redirect.
+    window.location.href = 'post.html';
+  }

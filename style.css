@@ -5,27 +5,36 @@ body{
     overflow-x: hidden;
 }
 header{
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding-bottom: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 main{
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 1%;
+    margin-right: 2%;
 }
 h1,h2,h3,h4,h5{
     font-family: "Frank Ruhl Libre", serif;
     font-optical-sizing: auto;
     font-style: normal;
 }
+.buscar{
+    font-size: 25px;
+    margin-top:15px
+}
 .logo{
     font-family: "Frank Ruhl Libre", serif;
     font-optical-sizing: auto;
     font-style: normal;
-    font-size: 20px;
+    font-size: 28px;
     font-weight: 600;
+}
+.logolink{
+    color: #2c2d4b;
+    text-decoration: none;
 }
 .fila{
     display: flex;
@@ -65,6 +74,9 @@ h1,h2,h3,h4,h5{
 .revimg{
     width: 300px;
     height: 160px !important;
+}
+.revsem{
+    width:50%
 }
 .caja{        
     background-color: #fff;   
@@ -336,6 +348,23 @@ blockquote{
     border: 2px solid #FFF;
     margin-left: -105px;
     top: 50px;
+}
+.imgdestacada{
+    width: 100%;
+}
+.caja:hover{
+    cursor: pointer;
+    background-color: #2c2d4b;
+    transition: all 1s;
+}
+.caja:hover .contentcaja span{
+    color: #FFF !important
+}
+.caja:hover .contentcaja h4{
+    color: #FFF !important
+}
+.caja:hover .contentcaja p{
+    color: #FFF !important
 }
 /* FOOTER */
 
@@ -765,6 +794,319 @@ footer .columna{
     color: #a6accd
 }
 
+.doscolumnas{
+    display: flex;
+    gap: 20px;
+}
+.columnaprincipal{
+    width: 70%;
+}
+.sidebar{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 80px 0 20px 0;
+}
+.mainimg{
+    object-fit: cover;
+    width: 100%;
+    height: 350px
+}
+
+.mainfecha{
+    padding: 20px 0 20px 0;
+    color: #666;
+    font-size: 12px;
+    text-align: center;
+}
+.maincontent{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50px;
+}
+
+.maincontent p{
+    font-size: 1.2em;
+}
+
+/* RATING */
+
+.moviecard {
+    font-family: 'Helvetica', sans-serif, 'Ariel';
+    position: relative;
+    background: #ffffff;
+    color: #555555;
+    margin: 50px auto;
+    width: 100%;
+    max-width: 100%;
+    min-height: 300px;
+    padding: 30px 300px 30px 30px;
+    -moz-box-shadow: -5px 5px 15px;
+    -webkit-box-shadow: -5px 5px 15px;
+    box-shadow: -5px 5px 15px;
+    border-radius: 5px;
+  }
+  .moviecard #movie-content {
+    opacity: 1;
+    width: 100%;
+    display: table;
+    transition: all 500ms ease-out;
+    position: relative;
+  }
+  .moviecard .movie-title {
+    font-size: 36px;
+    padding-bottom: 6px;
+    color: #333333;
+  }
+  .moviecard .movie-title .movie-year {
+    margin-left: 12px;
+    font-size: 16px;
+  }
+  .moviecard .movie-title a {
+    color: #333333;
+    text-decoration: none;
+  }
+  .moviecard .movie-title a:hover {
+    color: #858585;
+  }
+  .moviecard .movie-details {
+    font-size: 12px;
+    padding-bottom: 24px;
+    margin-bottom: 12px;
+    border-bottom: 1px solid #dbdbdb;
+  }
+  .moviecard .movie-details span {
+    padding: 0px 6px;
+    border-right: 1px solid #dbdbdb;
+  }
+  .moviecard .movie-details span:last-child {
+    border: none;
+  }
+  .moviecard .movie-castcrew {
+    padding-top: 12px;
+    width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  .moviecard .movie-castcrew span.title {
+    color: #333333;
+    display: inline-block;
+    width: 80px;
+    font-weight: 600;
+  }
+  .moviecard .movie-synopsis {
+    margin: 24px 0px;
+    padding-top: 24px;
+    border-top: 1px solid #dbdbdb;
+    max-height: 130px;
+    height: 130px;
+    overflow-y: hidden;
+    width: 90%;
+  }
+  .moviecard .movie-ratings {
+    position: absolute;
+    right: 50px;
+  }
+  .moviecard .movie-ratings span.star {
+    display: inline-block;
+    margin-right: 12px;
+    color: #F0DE00;
+    font-size: 36px;
+  }
+  .moviecard .movie-ratings span.score {
+    font-size: 30px;
+    color: #333333;
+    font-weight: 800;
+  }
+  .moviecard .movie-trailer-btn {
+    text-transform: uppercase;
+    outline: none;
+    padding: 15px 50px;
+    position: relative;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .moviecard .movie-trailer-btn:hover {
+    text-decoration: underline;
+  }
+  .moviecard .movie-trailer-btn:hover:before {
+    color: #333333;
+  }
+  .moviecard .movie-trailer-btn:hover:after {
+    border-color: #333333;
+  }
+  .moviecard .movie-trailer-btn:before {
+    content: '▸';
+    font-size: 30px;
+    color: #333333;
+    position: absolute;
+    top: 2px;
+    left: 20px;
+  }
+  .moviecard .movie-trailer-btn:after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    border: 1px solid #333333;
+    border-radius: 50%;
+    position: absolute;
+    left: 18px;
+    top: 12px;
+  }
+  .moviecard .movie-trailer {
+    width: 0px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    right: 0px;
+    height: 100%;
+    transition: all 500ms;
+    top: 0px;
+    background: #ffffff;
+    z-index: 1;
+    padding: 60px 40px 60px 60px;
+    border-radius: 5px;
+  }
+  .moviecard .movie-trailer a.back-btn {
+    color: #333333;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 6px 12px 6px 18px;
+    position: absolute;
+    top: 12px;
+    left: 300px;
+    text-transform: uppercase;
+    font-size: 12px;
+    cursor: pointer;
+  }
+  .moviecard .movie-trailer a.back-btn:before {
+    content: '⌜';
+    position: absolute;
+    left: 5px;
+    top: 1px;
+    transform: rotate(-45deg);
+    font-size: 20px;
+  }
+  .moviecard .movie-trailer a.back-btn:hover {
+    color: #333;
+  }
+  .moviecard .movie-trailer iframe {
+    width: 100%;
+    height: 100%;
+  }
+  .moviecard .movie-poster {
+    position: absolute;
+    background: url("https://static0.gamerantimages.com/wordpress/wp-content/uploads/2024/06/call-of-duty-black-ops-6-tag-page-cover-art.jpg");
+    background-color: #dbdbdb;
+    background-size: 360px 540px;
+    background-repeat: no-repeat;
+    height: 0;
+    width: 350px;
+    height: 500px;
+    right: -50px;
+    top: -20px;
+    -moz-box-shadow: -2px 2px 7px rgba(0, 0, 0, 0.6);
+    -webkit-box-shadow: -2px 2px 7px rgba(0, 0, 0, 0.6);
+    box-shadow: -2px 2px 7px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+    transition: all 500ms ease-out;
+    z-index: 10;
+  }
+  .moviecard .movie-poster:hover:before {
+    color: rgba(255, 255, 255, 0.8);
+  }
+  .moviecard.movie-view-trailer .movie-poster {
+    right: 600px;
+  }
+  .moviecard.movie-view-trailer #movie-content {
+    opacity: 0;
+    width: 0px;
+  }
+  .moviecard.movie-view-trailer .movie-trailer {
+    width: 100%;
+    opacity: 1;
+    padding-left: 300px;
+  }
+  .moviecard.movie-view-trailer .movie-trailer #youvideo {
+    height: 100%;
+  }
+
+/* sharing */
+
+.sharing {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--sharing-gap, 0.5rem);
+    padding: 10px 0 10px 0
+  }
+  .sharing-item {
+    transition: background 0.3s, color 0.3s;
+    color: var(--sharing-color, #fff);
+    background-color: var(--sharing-bg, #000);
+    padding: var(--sharing-padding, 0.875rem);
+    border-radius: var(--sharing-radius, 0.5rem);
+    box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.1), 0 2px 5px -1px rgba(0, 0, 0, 0.05);
+  }
+  .sharing-item .i {
+    stroke: currentColor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    fill: none;
+    transition: transform 0.3s;
+    stroke-width: 2;
+    width: var(--sharing-size, 22px);
+    height: var(--sharing-size, 22px);
+    display: block;
+  }
+  .sharing-item:hover {
+    background-color: #fff;
+    --sharing-color: var(--sharing-bg, #000);
+  }
+  .sharing-item:hover .i {
+    transform: rotate(360deg);
+  }
+  .sharing-facebook {
+    --sharing-bg: #1778F2 ;
+  }
+  .sharing-bluesky {
+    --sharing-bg: #0085ff ;
+  }
+  .sharing-twitter {
+    --sharing-bg: #55ACEE ;
+  }
+  .sharing-pinterest {
+    --sharing-bg: #F0002A ;
+  }
+  .sharing-threads {
+    --sharing-bg: #000000 ;
+  }
+  .sharing-tumblr {
+    --sharing-bg: #35465C ;
+  }
+  .sharing-reddit {
+    --sharing-bg: #FF4500 ;
+  }
+  .sharing-vk {
+    --sharing-bg: #4376A6 ;
+  }
+  .sharing-whatsapp {
+    --sharing-bg: #4FCE5D ;
+  }
+  .sharing-telegram {
+    --sharing-bg: #0088CC ;
+  }
+  .sharing-linkedin {
+    --sharing-bg: #0077B5 ;
+  }
+  .sharing-envelope {
+    --sharing-bg: #464EB8 ;
+  }
+
 @media only screen and (max-width: 600px) {
 
     body{     
@@ -855,5 +1197,38 @@ footer .columna{
     .bordecolumna {
         padding: 0 5px 0 5px;
     }
-    
+    .doscolumnas{
+        padding-left: 20px;
+        flex-direction: column;
+    }
+    .columnaprincipal{
+        width: 100%;
+    }
+    .sidebar{
+        width: 100%;
+    }
+    .moviecard {
+        width: 400px;
+        max-width: 100%;      
+        padding: 30px 20px 30px 30px;
+    }
+    .moviecard .movie-poster {        
+        width: 150px;
+        height: 200px;
+        right: 0px;
+        top: -20px; 
+        background-size: cover;       
+    }
+    .moviecard .movie-ratings {
+        left: 0px;
+    }
+    .moviecard .movie-title {
+        margin-top: 50px;
+        font-size: 26px;
+        font-weight: 600;
+        margin-right: 200px
+    }
+    .revsem{
+        width:100%
+    }
 }
